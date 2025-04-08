@@ -29,3 +29,54 @@ Axios – Para consumir os dados da API.
 CSS – Estilização básica da interface.
 
 # 3. Estrutura do Projeto
+to_do_app/
+├── backend/
+│   └── app/
+│       ├── main.py
+│       ├── models.py
+│       ├── schemas.py
+│       ├── crud.py
+│       └── database.py
+├── frontend/
+│   └── src/
+│       ├── App.jsx
+│       ├── components/
+│       └── pages/
+└── script.sql
+# 4. Como Rodar o Projeto
+Requisitos:
+Python 3.10 ou superior
+
+Node.js e npm
+
+MySQL instalado
+Passos:
+
+#1. Clonar o repositório:
+
+bash
+Copiar
+Editar
+git clone https://github.com/seu-usuario/to_do_app.git
+cd to_do_app
+# 2. Banco de Dados:
+
+Criar um banco chamado sistema_db no MySQL Workbench.
+
+Rodar o script.sql para criar a tabela.
+# 3. Backend:
+cd backend
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+uvicorn app.main:app --reload
+A API vai ficar disponível em: http://localhost:8000/docs
+
+# 4. Frontend:
+cd frontend
+npm install
+npm run dev
+A interface vai rodar em: http://localhost:5173
+
+# 5. Conclusão
+O sistema foi desenvolvido com foco na simplicidade e organização. O backend e o frontend se comunicam corretamente, e as tarefas são salvas no banco de dados. Toda a estrutura foi pensada para ser fácil de entender e manter.
