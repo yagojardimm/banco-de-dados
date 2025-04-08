@@ -1,4 +1,4 @@
-#  Relatório Técnico – Aplicação Full Stack
+#  Relatório Técnico –
 # 1. Objetivo
 Este projeto tem como objetivo desenvolver uma aplicação web full stack que permita gerenciar tarefas (To-Do List). A API foi feita com FastAPI, o banco de dados é MySQL, e o frontend foi desenvolvido em React. A aplicação permite criar, visualizar, atualizar e excluir tarefas.
 
